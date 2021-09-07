@@ -1,6 +1,9 @@
 import React from 'react';
 import './UserPost.styles.scss';
 import badge from '../../assets/images/badge.svg';
+import like from '../../assets/images/like.svg';
+import comment from '../../assets/images/comment.svg';
+import upload from '../../assets/images/upload.svg';
 
 const UserPost = () => (
   <div className="user-post">
@@ -12,7 +15,7 @@ const UserPost = () => (
           {`Today at ${new Date().toLocaleTimeString([], { timeStyle: 'short' })}`}
         </div>
       </div>
-      <button type="button" className="moreButton">...</button>
+      <button type="button" className="button moreButton">...</button>
     </div>
     <div className="postContent">
       <div className="bookTitle">Dark Knight</div>
@@ -40,7 +43,13 @@ const UserPost = () => (
         </li>
       </ul>
     </div>
-    <div className="postFooter">Footer</div>
+    <div className="postFooter">
+      <button type="button" className="button"><img src={like} alt="like button" className="socialBtn" /></button>
+      <div className="lineBreak" />
+      <button type="button" className="button"><img src={comment} alt="comment button" className="socialBtn" /></button>
+      <div className="lineBreak" />
+      <button type="button" className="button"><img src={upload} alt="upload button" className="socialBtn" /></button>
+    </div>
   </div>
 );
 
