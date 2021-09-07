@@ -43,10 +43,15 @@ const UserPost = () => (
         </li>
       </ul>
     </div>
+    <div className="kudos">24 gave KUDOS</div>
     <div className="postFooter">
       <button type="button" className="button"><img src={like} alt="like button" className="socialBtn" /></button>
+      <div className="socialNum">24 KUDOS</div>
       <div className="lineBreak" />
-      <button type="button" className="button"><img src={comment} alt="comment button" className="socialBtn" /></button>
+      <button type="button" className="button">
+        <img src={comment} alt="comment button" className="socialBtn" />
+      </button>
+      <div className="socialNum">5</div>
       <div className="lineBreak" />
       <button type="button" className="button"><img src={upload} alt="upload button" className="socialBtn" /></button>
     </div>
