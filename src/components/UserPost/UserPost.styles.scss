@@ -1,6 +1,6 @@
 .user-post {
   border: 1px solid black;
-  height: 150px;
+  // height: 150px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -36,10 +36,36 @@
 }
 
 .postContent {
-  font-size: 1.25em;
+  font-size: 1.15em;
   text-align: start;
   line-height: 1.25em;
-  padding: 1em 1.5em 0.5em 4em;
+  margin: 1em 1.5em 0.5em 4em;
+
+  .bookTitle {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .achievements {
+    float: right;
+  }
+
+  .badges {
+    height: 1.5em;
+    width: 1.5em;
+  }
+
+  .readingStats {
+    display: flex;
+    margin-top: 1em;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .lineBreak {
+    border-right: 2px solid black;
+    margin: 0 5em;
+  }
 }
 
 
