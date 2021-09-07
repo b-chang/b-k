@@ -19,6 +19,7 @@
   }
 
   .userName {
+    text-align: start;
     font-size: 1.1em;
     font-weight: 600;
   }
@@ -32,6 +33,13 @@
     background: rgba(0,0,0,0);
     font-size: 1.25rem;
   }
+}
+
+.postContent {
+  font-size: 1.25em;
+  text-align: start;
+  line-height: 1.25em;
+  padding: 1em 1.5em 0.5em 4em;
 }
 
 
