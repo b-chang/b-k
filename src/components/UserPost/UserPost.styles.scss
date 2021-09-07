@@ -2,4 +2,40 @@
   border: 1px solid black;
   height: 150px;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+
+  .avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0.25em 1.25em 0 0.5em;
+  }
+
+  .userName {
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  .moreButton {
+    cursor: pointer;
+    align-self: start;
+    margin-left: auto;
+    margin-right: 1em;
+    border: none;
+    background: rgba(0,0,0,0);
+    font-size: 1.25rem;
+  }
+}
+
+
+.postFooter {
+  // border-top: 1px solid black;
+  margin-top: auto;
 }
