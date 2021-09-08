@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-indent */
 import React from 'react';
 import './UserPost.styles.scss';
 import badge from '../../assets/images/badge.svg';
@@ -14,19 +15,6 @@ const UserPost = ({ post }) => {
     const rminutes = Math.round(minutes);
 
     return time >= 60 ? `${rhours}h ${rminutes}m` : `${rminutes}m`;
-  };
-
-  const renderBadges = () => {
-    const { achievements } = post;
-    const badges = [];
-
-    while (badges.length < achievements) {
-      badges.push(<img src={badge} alt="achievment badge" className="badges" />);
-    }
-
-    return (
-      badges.map((badge) => <li>{badge}</li>)
-    );
   };
 
   return (
@@ -47,7 +35,10 @@ const UserPost = ({ post }) => {
             <div className="bookTitle">{post.book}</div>
             <div className="achievements">
               Achievements
-              <ul>{renderBadges()}</ul>
+                <div>
+                  <img src={badge} alt="achievment badge" className="badge" />
+                  {post.achievements}
+                </div>
             </div>
             <ul className="readingStats">
               <li className="stat">
