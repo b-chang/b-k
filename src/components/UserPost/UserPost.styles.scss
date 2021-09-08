@@ -1,5 +1,121 @@
 .user-post {
   border: 1px solid black;
-  height: 150px;
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  font-weight: 400;
+
+  .button {
+    cursor: pointer;
+    align-self: start;
+    border: none;
+    background: rgba(0,0,0,0);
+    font-size: 1.25rem;
+  }
+
+  .lineBreak {
+    border-right: 2px solid black;
+    margin: 0 5em;
+  }
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+
+  .avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0.25em 1.25em 0 0.5em;
+  }
+
+  .userName {
+    text-align: start;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  .moreButton {
+    cursor: pointer;
+    align-self: start;
+    margin-left: auto;
+    margin-right: 1em;
+    border: none;
+    background: rgba(0,0,0,0);
+    font-size: 1.25rem;
+  }
+}
+
+.postContent {
+  font-size: 1.15em;
+  text-align: start;
+  line-height: 1.25em;
+  margin: 1em 1.5em 0.5em 4em;
+
+  .bookTitle {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .achievements {
+    float: right;
+  }
+
+  .achievements div {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .badge {
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 0.25em;
+  }
+
+  .readingStats {
+    display: flex;
+    margin-top: 1em;
+    padding: 0;
+    list-style: none;
+    font-weight: 500;
+  }
+
+  .readingNum {
+    font-weight: 400;
+  }
+}
+
+.kudos {
+  margin: 1em 1.5em 0.75em 4.5em;
+  text-align: start;
+  font-weight: 500;
+}
+
+.postFooter {
+  margin-top: auto;
+  padding: .5em 4em 0 4em;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid black;
+
+
+  .button {
+    cursor: pointer;
+    border: none;
+    background: rgba(0,0,0,0);
+  }
+
+  .socialBtn {
+    height: 25px;
+  }
+
+  .socialNum {
+    align-self: center;
+    margin-left: -5em;
+    font-weight: 500;
+  }
 }
