@@ -4,7 +4,6 @@ import UserPost from '../UserPost/UserPost.components';
 import posts from '../../FakeData';
 
 const Feed = () => {
-  console.log(posts);
   const renderPosts = posts.map((post) => (<UserPost post={post} key={post.id} />));
 
   return (

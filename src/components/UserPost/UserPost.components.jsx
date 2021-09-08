@@ -6,8 +6,6 @@ import comment from '../../assets/images/comment.svg';
 import upload from '../../assets/images/upload.svg';
 
 const UserPost = ({ post }) => {
-  console.log(post);
-
   const renderTime = (time) => {
     const num = time;
     const hours = (num / 60);

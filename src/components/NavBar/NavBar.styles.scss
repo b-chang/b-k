@@ -1,4 +1,67 @@
+$base-color: #FF5C4D;
+
 .navbar {
+  display: flex;
+  align-items: center;
   border: 1px solid black;
-  height: 200px;
+  padding: 0.75em;
+  // height: 200px;
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: $base-color;
+  }
+
+  button {
+    border: none;
+    background: rgba(0,0,0,0);
+    cursor: pointer;
+  }
+
+  .searchIcon {
+    height: 20px;
+    width: auto;
+    margin: 0 0.25em 0 1em;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    margin: 0 0.5em;
+  }
+
+  .navActivities {
+    margin-left: 1em;
+  }
+  
+  .navProfile {
+    margin-left: auto;
+    align-items: center;
+  }
+
+  .avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 0.75em;
+  }
+
+  .addPostBtn {
+    width: 25px;
+    height: 25px;
+    border: 1px solid $base-color;
+    border-radius: 50%;
+    
+    button {
+      color: $base-color;
+      font-size: 1.2em;
+    }
+  }
 }
+
