@@ -6,9 +6,7 @@ import comment from '../../assets/images/comment.svg';
 import upload from '../../assets/images/upload.svg';
 
 const UserPost = ({ post }) => {
-  console.log(post);
-
-  const renderTime = (time) => {
+  const formatTimeStamp = (time) => {
     const num = time;
     const hours = (num / 60);
     const rhours = Math.floor(hours);
@@ -67,7 +65,7 @@ const UserPost = ({ post }) => {
               <li className="stat">
                 TIME
                 <br />
-                <span className="readingNum">{renderTime(post.readingTime)}</span>
+                <span className="readingNum">{formatTimeStamp(post.readingTime)}</span>
               </li>
             </ul>
           </div>
