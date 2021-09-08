@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-indent */
 import React from 'react';
 import './UserPost.styles.scss';
 import badge from '../../assets/images/badge.svg';
@@ -35,10 +34,10 @@ const UserPost = ({ post }) => {
             <div className="bookTitle">{post.book}</div>
             <div className="achievements">
               Achievements
-                <div>
-                  <img src={badge} alt="achievment badge" className="badge" />
-                  {post.achievements}
-                </div>
+              <div>
+                <img src={badge} alt="achievment badge" className="badge" />
+                {post.achievements}
+              </div>
             </div>
             <ul className="readingStats">
               <li className="stat">
