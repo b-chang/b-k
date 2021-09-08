@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './LoginForm.styles.scss';
 
-const LoginForm = () => {
+const LoginForm = ({ getUser }) => {
   const [values, setValues] = useState({
     username: '',
     password: '',
@@ -14,7 +14,6 @@ const LoginForm = () => {
   };
 
   const validateInputs = () => {
-    console.log(values);
     let usernameError = '';
     let passwordError = '';
     let isValid = true;
@@ -27,25 +26,22 @@ const LoginForm = () => {
       passwordError = 'Enter your password.';
     }
 
-    console.log(usernameError, passwordError);
     if (usernameError || passwordError) {
       setValues({ ...values, usernameError, passwordError });
       isValid = false;
     }
-    console.log(isValid);
+
     return isValid;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateInputs()) {
-      console.log('success', values);
       setValues({
         username: '',
         password: ''
       });
-    } else {
-      console.log(values);
+      getUser(values.username);
     }
   };
 

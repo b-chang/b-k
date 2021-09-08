@@ -1,14 +1,14 @@
 .loginForm {
-    border: 1px solid blue;
+    border: 1px solid rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1.5em 15em;
-    padding: 1em;
+    padding: 1.5em 0.5em;
     
     label {
-        width: 90%;
+        width: 80%;
         text-align: start;
 
         .inputLabel {
@@ -28,6 +28,7 @@
 
     .error {
         color: #ff0000;
-        margin-left: .75em;
+        margin: 0.25em .75em 0.5em;
+        font-size: 1.25em;
     }
 }
